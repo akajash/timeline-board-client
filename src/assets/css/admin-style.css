@@ -1,0 +1,793 @@
+/* .container-fluid-custom h1{
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.container-fluid-custom h2{
+    font-size: 1rem;
+}
+
+.container-fluid-custom h3{
+    font-size: 0.8rem;
+}
+
+.container-fluid-custom h4{
+    font-size: 0.6rem;
+}
+
+.container-fluid-custom p{
+    font-size: 14px !important;
+}
+
+
+.container-fluid-custom{
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: auto 2rem;
+}
+
+.insights{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.6rem;
+}
+
+.insights > div {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    box-shadow: 0 2rem 3rem rgba(132,139,200,0.18);
+    transition: all 300ms ease;
+}
+
+.insights > div:hover {
+    box-shadow: none;
+}
+
+.quickbar {
+    display: flex;
+    flex-direction: row ;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.quickbar > div {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    box-shadow: 0 1rem 1.5rem rgba(132,139,200,0.18);
+    min-width: 150px;
+    cursor: pointer;
+}
+
+.quickbar > div span {
+    background: #7380ec;
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 0.8rem;
+    margin: 0.5rem;
+}
+
+.insights > div span {
+    background: #7380ec;
+    padding: 1rem;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.insights > div.expenses span{
+    background: #ff7782;
+}
+
+.insights > div.tasks span {
+    background: #41f1b6;
+}
+
+.insights > div .middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.insights h3{
+    margin: 1rem 0 0.6rem;
+    font-size: 1rem;
+}
+
+.insights .progress {
+     position: relative;
+     background: #fff;
+     width: 92px;
+     height: 92px;
+     border-radius: 50%;
+}
+
+.insights svg{
+    width: 7rem;
+    height: 7rem;
+}
+
+.insights svg circle {
+    fill: #fff;
+    stroke: #7380ec;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+     stroke-dasharray: 110; 
+    stroke-dashoffset: 92;
+}
+
+.insights .sales svg circle{
+    stroke-dashoffset: -30;
+    stroke-dasharray: 200;
+}
+
+.insights .expenses svg circle{
+    stroke-dashoffset: 20;
+    stroke-dasharray: 80;
+}
+
+.insights .revenue svg circle{
+    stroke-dashoffset: 35;
+    stroke-dasharray: 110;
+}
+
+
+.insights .progress .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.insights small{
+    margin-top: 1.3rem;
+    display: block;
+}
+
+.recent-orders{
+    margin-top: 2rem;
+}
+
+.recent-orders h2{
+    margin-bottom: 0.8rem;
+}
+
+.recent-orders table{
+    background: #fff;
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2rem 3rem rgba(132,139,200,0.18);
+    transition: all 300ms ease;
+}
+
+.recent-orders table:hover{
+    box-shadow: none;
+}
+
+.recent-orders table tbody td{
+    height: 2.8rem;
+    border-bottom: 1px solid #fff;
+    color: #000;
+}
+
+.recent-orders table tbody tr:last-child td{
+    border: none;
+}
+
+.recent-orders a{
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+    color: #7380ec;
+}
+
+.right{
+    margin-top: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 2rem;
+}
+
+.right .recent-tasks{
+    margin-top: 1rem;
+}
+
+.right .recent-tasks h2{
+    margin-bottom: 0.8rem;
+}
+
+.right .recent-tasks .tasks{
+    background: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2rem 3rem rgba(132,139,200,0.18);
+    transition: all 300ms ease;
+}
+
+.right .recent-tasks .tasks:hover{
+    box-shadow: none;
+}
+
+.right .recent-tasks .tasks .task{
+    display: grid;
+    grid-template-columns: 2.6rem auto;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.profile-pic img{
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.right .sales-analytics{
+    margin-top: 2rem;
+}
+
+.right .sales-analytics h2{
+    margin-bottom: 0.8rem;
+}
+
+.right .sales-analytics .follow{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.7rem;
+    padding: 1.4rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 2rem 3rem rgba(132,139,200,0.18);
+    transition: all 300ms ease;
+}
+
+.right .sales-analytics .follow:hover{
+    box-shadow: none;
+}
+
+.right .sales-analytics .follow .right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+}
+
+
+
+@media screen and (max-width: 1430px ){
+    .container-fluid-custom{
+        
+    }
+
+    
+
+    .main .insights{
+        grid-template-columns: 1fr;
+        gap: 0;
+        
+    }
+
+    .right{
+        justify-content: flex-start;
+        
+    }
+
+
+
+} */
+
+/* @media screen and (max-width: 1050px) {
+    .container-fluid-custom{
+        
+        
+    }
+
+    .right{
+        margin-top: 1.4rem;
+        justify-content: start;
+        gap: 2rem;
+    }
+} */
+
+:root{
+
+    --base-gap : 16px;
+
+    --gap-sm-1 : calc(7/8 * var(--base-gap));
+    --gap-sm-2 : calc(6/8 * var(--base-gap));
+    --gap-sm-3 : calc(5/8 * var(--base-gap));
+    --gap-sm-4 : calc(4/8 * var(--base-gap));
+    --gap-sm-5 : calc(3/8 * var(--base-gap));
+    --gap-sm-6 : calc(2/8 * var(--base-gap));
+    --gap-sm-7 : calc(1/8 * var(--base-gap));
+
+    --gap-lg-7 : calc(1 + 7/8 * var(--base-gap));
+    --gap-lg-6 : calc(1 + 6/8 * var(--base-gap));
+    --gap-lg-5 : calc(1 + 5/8 * var(--base-gap));
+    --gap-lg-4 : calc(1 + 4/8 * var(--base-gap));
+    --gap-lg-3 : calc(1 + 3/8 * var(--base-gap));
+    --gap-lg-2 : calc(1 + 2/8 * var(--base-gap));
+    --gap-lg-1 : calc(1 + 1/8 * var(--base-gap));
+
+    --ft-sm-1: 0.8rem;
+    --ft-base: 1rem;
+    --ft-lg-1 : 1.25rem;
+    --ft-lg-2: 1.563rem;
+    --ft-lg-3: 1.953rem;
+    --ft-lg-4: 2.441rem;
+}
+
+
+.main{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    border-radius: calc(5/3 * 24px);
+    padding: 2rem 0;
+    /* padding: calc(4 * 18px) 0; */
+    /* background-color: rgb(222, 222, 222); */
+    /* box-shadow : 67px 62px 120px 0px rgba(33,37,52,0.75); */
+    gap: var(--gap-lg-4);
+}
+
+.main article{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: var(--gap-lg-5);
+}
+
+.dash-grid{
+    display: grid;
+    gap: 18px;
+    grid-template-rows: repeat(6,1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    
+    'my-team my-team my-team follow-up'
+    'my-team my-team my-team follow-up'
+    'my-team my-team my-team follow-up'
+    'my-team my-team my-team pending'
+    'project-1 project-2 project-3 pending'
+    'project-1 project-2 project-3 pending';
+    
+    
+}
+
+.btn-custom{
+    background: none;
+    border: none;
+}
+
+.dash-nav{
+    background-color: #fff;
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 2rem 3rem rgba(132,139,200,0.18);
+    align-items: center;
+}
+
+.dash-nav h3{
+    padding: 25px;
+}
+
+.my-team{
+    grid-area: my-team;
+    
+}
+
+.upcoming{
+    grid-area: upcoming ;
+}
+
+.follow-up{
+    grid-area: follow-up;
+}
+
+.pending{
+    grid-area: pending;
+}
+
+.project-1{
+    grid-area: project-1;
+    background: linear-gradient(to left, #de6262,#ffb88c) !important;
+    
+}
+
+.project-2{
+    grid-area: project-2;
+    background: linear-gradient(to left, #36d1dc ,#5b86e5) !important;
+    
+}
+
+.project-3{
+    grid-area: project-3;
+    background: linear-gradient(to left, #43cea2 , #185a9d) !important;
+}
+
+
+/* .dash-grid > *{
+    background-color: aqua;
+} */
+
+.dash-grid section{
+    background: #ffffff;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    gap: 18px;
+    padding: 1rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;;
+}
+
+.dash-grid section > header{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: max-content 1fr;
+    
+    grid-template-areas: 
+    "icon header";
+    padding: 5px;
+    border: none;
+}
+
+.dash-grid section > header > .icon{
+    grid-area: icon;
+    width: 58px;
+    height: 58px;
+    display: grid;
+    place-content: center;
+    border-radius: 10px;
+    background:rgb(92, 61, 179);
+}
+
+
+
+.dash-grid section > header > h2{
+    grid-area: header;
+    font-size: 18px;
+    align-items: center;
+}
+
+.dash-grid section > header > p{
+    grid-area: sub-header;
+    font-weight: light;
+    font-size: 12px;
+}
+
+.dash-grid section > *:nth-child(2){
+    margin: 0 1rem 1rem;
+    place-self: stretch;
+}
+
+dl{
+    display: grid;
+    grid-auto-flow: column dense;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: var(--gap-sm-6) 0;
+}
+
+dl dt{
+    font-weight: 100;
+    font-size: var(--ft-base);
+    color:rgb(38, 18, 63);
+    line-height: 1rem;
+}
+
+dl dd{
+    font-size: 1rem;
+}
+
+dl > .size-1{
+    grid-column: span 1;
+}
+dl > .size-2{
+    grid-column: span 2;
+}
+dl > .size-3{
+    grid-column: span 3;
+}
+
+.dash-grid .text-muted{
+    color: rgb(92, 61, 179) !important;
+}
+
+
+
+.project{
+    display: grid;
+    justify-items: start;
+    grid-auto-rows: max-content;
+    gap: 8px;
+    
+}
+
+.project .project-members{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 8px;
+}
+
+
+
+.avatar{
+    width: 40px;
+    height: 40px;
+    background-color: bisque;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+
+.project .dash-progress {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,max-content);
+    grid-template-areas: 
+    "text percentage"
+    "bar bar";
+    place-self: stretch;
+    gap: 1rem;
+}
+
+.dash-progress .progress-text{
+    grid-area: text;
+}
+
+.dash-progress .progress-percentage{
+    grid-area: percentage;
+    justify-self: end;
+}
+
+.dash-pbar{
+    grid-area: bar;
+    height: 5px;
+    border-radius: 5px;
+    
+}
+
+.team{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 0 20px;
+    
+}
+
+.team .team-member{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "avatar name"
+    "avatar title"
+    ;
+    gap: 0 20px;
+    align-items: center;
+}
+
+.team-member .avatar{
+    grid-area: avatar;
+}
+
+.team-member .name{
+    grid-area: name;
+    align-self: end;
+}
+
+.team-member .title{
+    grid-area: title;
+    align-self: start;
+}
+
+
+.insights-icon{
+    padding-top: .5rem;
+    padding-left: 1rem;
+    font-size: 2rem;
+    color: #fff;
+}
+.insights-detail{
+    color: #fff;
+}
+
+.insights-detail h4{
+    margin-bottom:0;
+    color:#fff;
+}
+
+.insights-detail h2{
+    margin-top:0;
+    font-size: 2rem;
+    color: #fff;
+}
+
+/* .upcoming header h4{
+    font-size: 18px;
+} */
+
+.follow-up .detail .item .date-fill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #000;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    justify-content: center;
+
+}
+
+.follow-up .detail .item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+
+.item .brief{
+    margin-left: 16px;
+}
+
+.item .brief h5{
+    margin : 0;
+}
+
+.item .brief h3{
+    margin : 0;
+    color:rgb(43, 43, 43);
+}
+
+.follow-up .detail .item .date-fill h2{
+    margin: 0;
+}
+
+.follow-up .detail .item .date-fill h5{
+    margin: 0;
+}
+
+.my-team h1{
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.follow-up h1, .upcoming h1, .pending h1{
+    font-weight: lighter;
+    
+}
+
+.my-team span{
+    font-weight: 50;
+}
+
+.profile-pic img{
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+
+.task-item{
+    display: grid;
+    grid-template-columns: 2.6rem auto;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+.task-desc p{
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.lead-item{
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.ic {
+    background-color: #5b86e5;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.heads-up-content{
+    margin-left: 0.5rem;
+}
+
+.ic i {
+    color: #fff;
+    padding: 10px;
+
+}
+
+.lead-item h5{
+    
+    margin-bottom: 0;
+}
+
+.lead-item p{
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+
+
+@media screen and (max-width: 1280px)
+    
+{
+    .main{
+        max-width: 1024px;
+        
+        
+        
+    }
+
+
+    /* .dash-grid{
+        max-height: 705px;
+        grid-template-rows: repeat(7,1fr);
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+        'my-team my-team'
+        'my-team my-team'
+        'my-team my-team'
+        'follow-up pending'
+        'project-1 project-1'
+        'project-2 project-2'
+        'project-3 project-3'
+        ;
+    } */
+
+    .dash-grid{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    
+}
+
+@media screen and (max-width: 1000px){
+    .my-team .team{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(5,1fr);
+    }
+}
+
+@media screen and (max-width: 540px){
+    .my-team .team{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
