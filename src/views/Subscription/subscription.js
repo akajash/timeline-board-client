@@ -69,12 +69,12 @@ const Subscription = () => {
             return
         }
 
-        
+        // __DEV__ ? "rzp_test_hikMcmJVg0Mwou" :
 
         const data = await subscribe().then((res) => {
             
             var options = {
-                "key": __DEV__ ? "rzp_test_hikMcmJVg0Mwou" : "", // Enter the Key ID generated from the Dashboard
+                "key":  "", // Enter the Key ID generated from the Dashboard
                 "amount": res.data.amount, 
                 "currency": res.data.currency,
                 "name": "Payment",
@@ -198,7 +198,7 @@ const Subscription = () => {
         
                 <img src={payment}/>
                 <h1>Beta-Access</h1>
-                <p> 1199 INR/Month</p>
+                <p> 1399 INR/Month</p>
                 <Button color="primary" className="mt-3 mb-3" onClick={displayRazorpay}>Subscribe</Button>
                 <p>Beta-access? Yes, it's a trial system that helps us to analyse the user workflow, and the market parameters. The complete pricing tiers have not disclosed yet, but ofcourse there are perks in being our first pick of customers.</p>
             </section>

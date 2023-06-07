@@ -120,6 +120,14 @@ const variables = [
   {value: "{start_date}", name: "Start Date"},
   {value: "{end_date}", name: "End Date"},
   {value: "{client_notes}", name: "Notes"},
+  {value: "{workforce_name}", name: "Workforce Name"},
+  {value: "{workforce_contact}", name: "Workforce Contact"},
+  {value: "{workforce_joining}", name: "Workforce Joining Date"},
+  {value: "{workforce_payout}", name: "Workforce Payout Type"},
+  {value: "{workforce_amount}", name: "Workforce Pay"},
+  {value: "{workforce_designation}", name: "Workforce Designation"},
+  {value: "{workforce_email}", name: "Workforce Email"},
+  {value: "{workforce_type}", name: "Workforce Work Type"},
 ]
     
 

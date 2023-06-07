@@ -140,7 +140,7 @@ const AdminDashboard = () => {
     <>
         {/* <div className="navbar"></div> */}
         <div className="dash-nav">
-          <h3>Hi, Signature Frames. Here's what we brewed for you.</h3>
+          <h3>Hi there! Here's what we brewed for you.</h3>
         </div>
         <div className="container-fluid">
           <div className="main">
@@ -154,7 +154,7 @@ const AdminDashboard = () => {
                     <h1 className="text-light">Projects</h1>
                   </header>
                   <div className="team">
-                    {data.clients ? (
+                    {data.clients != 0 ? (
                       data.clients.map((c,index) => 
                       <div className = "team-member" key={index}>
                       <div className="avatar">
@@ -181,7 +181,7 @@ const AdminDashboard = () => {
                     
                     {/*   <a href="#">View All</a> */}
                   </div> 
-                  {!data.clients && (
+                  {data.clients == 0 && (
                     <div className="text-center">
                     <img src={empty} className="n-icon"/>
                     <p>No Data Available</p>
@@ -198,7 +198,7 @@ const AdminDashboard = () => {
                   <div className="insights-detail">
                     <h4>Total Leads</h4>
                     <h2>{data.leads}</h2>
-                    <p>{data.leadsInc ? "Increased" : "Decreased"} by {data.leadsPercentage.toFixed(2)}% as compared to last month</p>
+                    <p>{data.leadsInc ? "Increased" : "Decreased"} by {data?.leadsPercentage?.toFixed(2)}% as compared to last month</p>
                   </div>
                 </section>
                 <section className="project-2">
@@ -208,7 +208,7 @@ const AdminDashboard = () => {
                   <div className="insights-detail">
                     <h4>Total Sales</h4>
                     <h2>{data.orders}</h2>
-                    <p>{data.ordersInc ? "Increased" : "Decreased"} by {data.ordersPercentage.toFixed(2)}% as compared to last month</p>
+                    <p>{data.ordersInc ? "Increased" : "Decreased"} by {data?.ordersPercentage?.toFixed(2)}% as compared to last month</p>
                   </div>
                 </section>
                 <section className="project-3">
@@ -217,8 +217,23 @@ const AdminDashboard = () => {
                   </div>
                   <div className="insights-detail">
                     <h4>Lead Source</h4>
-                    <h2>{data.leadSourceCount}</h2>
-                    <p>{data.leadSource} drives more leads</p>
+                    {data.leadSource != "" ? 
+                    (
+                      <div>
+                      <h2>{data.leadSource}</h2>
+                      <p>{data.leadSourceCount} lead(s) are from this source</p>
+                      </div>
+                    )
+                    :
+                    (
+                      <div>
+                      <h2>-</h2>
+                      <p>No data to show</p>
+                      </div>
+                    )
+                  }
+                    
+                    
                   </div>
                 </section>
                
@@ -228,7 +243,7 @@ const AdminDashboard = () => {
                     <h1 className="text-light">Upcoming Projects</h1>
                   </header>
                   <div className="detail">
-                    {data.upcoming ? (
+                    {data.upcoming != 0 ? (
                       data.upcoming.map((u) => 
                       <div className="item">
                       <div className="date-fill">
@@ -251,7 +266,7 @@ const AdminDashboard = () => {
                     
                     
                     
-                    {data.upcoming && (
+                    {data.upcoming != 0 && (
                         <a href="/app/projects">View Shoots</a>
                     )}
                   </div>
@@ -264,7 +279,7 @@ const AdminDashboard = () => {
 
                   </header>
                   <div className="leads">
-                    {data.notifications ? (
+                    {data.notifications != 0 ? (
                       data.notifications.map((n) =>
                         <div className="lead-item">
                         <div className="ic">
@@ -293,7 +308,7 @@ const AdminDashboard = () => {
                     
                     
                     
-                    {data.notifications && (
+                    {data.notifications != 0 && (
                         <a href="/app/projects">View shoots</a>
                     )}
                   </div>
