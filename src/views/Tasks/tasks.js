@@ -305,15 +305,16 @@ const desc = "Assign and Manage Tasks for the shoot"
                          <i className="ni ni-cloud-download-95" />
                       </Button>
                       ) : (<div></div>)}
-                      {props.match.params.id && (
-                        <Button
+                      {props.match.params.id  == "" ? (
+                        <div></div>
+                      ):
+                      (<Button
                         color="primary"
                         onClick={toggleModal}
                         size="sm"
                       >
                         Task + 
-                      </Button>
-                      )}
+                      </Button>)}
                     
                   </div>
                   </Row>
