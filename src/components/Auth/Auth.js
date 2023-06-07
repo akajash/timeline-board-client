@@ -31,8 +31,8 @@ const initialState = {
     email: '',
     password:'',
     confirmPassword: '',
-    country: '',
-    currency: ''    
+    country: 'India',
+    currency: 'INR'    
 }
 
 const Auth = () => {

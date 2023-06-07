@@ -52,7 +52,7 @@ const App = () => {
                     <Route path="/subscription" exact component = {Subscription}/>
                     <Route path="/transaction/failed" exact component = {Failed}/>
                     <Route path="/transaction/success" exact component = {Success}/>
-                    
+                    {/* <Route path="/invoice/:id" exact component={} /> */}
 
                     <Redirect from="/" to="/app/dashboard" />
                 </Switch>
