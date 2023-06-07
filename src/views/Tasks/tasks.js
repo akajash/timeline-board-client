@@ -305,7 +305,7 @@ const desc = "Assign and Manage Tasks for the shoot"
                          <i className="ni ni-cloud-download-95" />
                       </Button>
                       ) : (<div></div>)}
-                      {props.match.params.id ? 
+                      {props.match.params.id != undefined ? 
                       (<Button
                         color="primary"
                         onClick={toggleModal}

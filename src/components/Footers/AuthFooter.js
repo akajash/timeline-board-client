@@ -16,7 +16,7 @@ const Login = () => {
                 © {new Date().getFullYear()}{" "}
                 <a
                   className="font-weight-bold ml-1"
-                  href="https://www.creative-tim.com?ref=adr-auth-footer"
+                  href="https://gotimeline.cloud"
                   target="_blank"
                 >
                   TIMELINE
@@ -27,13 +27,13 @@ const Login = () => {
               <Nav className="nav-footer justify-content-center justify-content-xl-end">
                 <NavItem>
                   <NavLink
-                    href="https://www.creative-tim.com?ref=adr-auth-footer"
+                    href="https://gotimeline.cloud"
                     target="_blank"
                   >
                     TIMELINE
                   </NavLink>
                 </NavItem>
-                <NavItem>
+                {/* <NavItem>
                   <NavLink
                     href="https://www.creative-tim.com/presentation?ref=adr-auth-footer"
                     target="_blank"
@@ -56,7 +56,7 @@ const Login = () => {
                   >
                     MIT License
                   </NavLink>
-                </NavItem>
+                </NavItem> */}
               </Nav>
             </Col>
           </Row>
