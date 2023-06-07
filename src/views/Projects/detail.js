@@ -232,13 +232,13 @@ const ProjectDetail = (props) => {
   
       }
 
-      const handleSubmit = (e) => {
+      const handleSubmit = async(e) => {
         e.preventDefault();
       
         
       
         
-        dispatch(updateProject(currentId, {...formData}))
+        await dispatch(updateProject(currentId, {...formData}))
 
         setProjectData(formData)
         
@@ -313,11 +313,7 @@ const ProjectDetail = (props) => {
                         </DropdownToggle>
                         <DropdownMenu className="dropdown-menu-arrow" right>
                           
-                          <DropdownItem onClick={() => handleUpdate(currentId)}>Update</DropdownItem>
-                          { status < 3  && (
-                            <DropdownItem onClick={() => nextWorkflow(currentId)}>Convert to {status[projectData.status+1]?.title}</DropdownItem>
-                          )}
-                          
+                          <DropdownItem onClick={() => handleUpdate(currentId)}>Update</DropdownItem>                          
                           {/* <DropdownItem onClick={() => handleInvoice(currentId)}>Generate Invoice</DropdownItem> */}
                           <DropdownItem onClick={() => handleTasks(currentId)}>Assign Tasks</DropdownItem>
                           <DropdownItem onClick={() => handleExpenses(currentId)}>Manage Expenses</DropdownItem>
