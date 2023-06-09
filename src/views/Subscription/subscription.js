@@ -197,10 +197,11 @@ const Subscription = () => {
             <section className="subs-hero">
         
                 <img src={payment}/>
-                <h1>Beta-Access</h1>
+                <h1>Standard Access</h1>
                 <p> 1399 INR/Month</p>
                 <Button color="primary" className="mt-3 mb-3" onClick={displayRazorpay}>Subscribe</Button>
-                <p>Beta-access? Yes, it's a trial system that helps us to analyse the user workflow, and the market parameters. The complete pricing tiers have not disclosed yet, but ofcourse there are perks in being our first pick of customers.</p>
+                <p>Tailored for photographers of all sizes, this plan provides you with the tools and resources to streamline your workflow, enhance client relationships, and boost your creative business success</p>
+                {/* <p>Beta-access? Yes, it's a trial system that helps us to analyse the user workflow, and the market parameters. The complete pricing tiers have not disclosed yet, but ofcourse there are perks in being our first pick of customers.</p> */}
             </section>
 
         </div>
