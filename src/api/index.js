@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 // const API = axios.create({baseURL : "http://localhost:5000"})
-const API = axios.create({baseURL: "http://64.227.146.174:5000" })
+const API = axios.create({baseURL: "https://server.timelinesuite.com" })
 
 API.interceptors.request.use((req) => {
     if(localStorage.getItem('profile')){
